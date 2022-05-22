@@ -11,9 +11,9 @@ class LoginPageLocators:
 
 
 class ProductPageLocators:
-    CART_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
-    MAIN_BOOK_NAME = (By.CSS_SELECTOR, ".product_main h1")
-    # MAIN_BOOK_NAME = (By.CSS_SELECTOR, "a.dropdown-toggle")
-    ALERT_BOOK_NAME = (By.CSS_SELECTOR, ".alertinner strong")
-    BOOK_PRICE = (By.CSS_SELECTOR, "p.price_color")
-    BASKET_PRICE = (By.CSS_SELECTOR, ".alertinner p strong")
+    CART = (By.CLASS_NAME, "btn-add-to-basket")
+    PRICE_FIELD = (By.CSS_SELECTOR, ".alert .alertinner p:first-child")
+    PRICE_FIELD_START = (By.CLASS_NAME, "col-sm-6.product_main > p")
+    PRODUCT_FIELD = (By.CLASS_NAME, "alertinner > strong")
+    PRODUCT_FIELD_START = (By.CLASS_NAME, "col-sm-6.product_main > h1")
+    SUCCESS_MESSAGE = (By.CLASS_NAME, "alert-success")
